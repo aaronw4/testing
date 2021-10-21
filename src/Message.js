@@ -15,14 +15,10 @@ class Message extends React.Component {
     
     render() {
         const {display} = this.state;
-
-        let handleClick = () => {
-            this.changeDisplay()
-        }
-
+        
         return (
             <React.Fragment>
-                <a onClick={handleClick}>
+                <a onClick={this.changeDisplay}>
                     Want to buy a new car?
                 </a>
                 {display ? 
